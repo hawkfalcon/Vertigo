@@ -1,12 +1,12 @@
 name: Vertigo
-version: 1.3
+version: 1.4
 main: me.hawkfalcon.Vertigo.Vertigo
 permissions: 
      vertigo.use:
         description: Allows use of plugin
         default: true
      vertigo.others:
-        description: Allows use of commands tha affect others
+        description: Allows use of commands that affect others
         default: OP
      vertigo.all:
         description: Allows use of /vertigo all
@@ -16,4 +16,4 @@ commands:
     vertigo:
         description: main command
         usage: /vertigo
-        
+

@@ -37,6 +37,12 @@ public class Vertigo extends JavaPlugin implements Listener{
 						player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 20000000, 15));					
 					}
 				}
+				if (args[0].equalsIgnoreCase("stopall") && ((p.hasPermission("Vertigo.all")))) {
+					p.removePotionEffect(PotionEffectType.SLOW);
+					for (Player player : getServer().getOnlinePlayers()) {
+						player.removePotionEffect(PotionEffectType.SLOW);
+					}
+				}
 			}
 			if (args.length == 2) {
 				if (args[0].equalsIgnoreCase("player") && ((p.hasPermission("vertigo.others")))) {
@@ -55,13 +61,14 @@ public class Vertigo extends JavaPlugin implements Listener{
 					if (getServer().getPlayer(args[1]) != null) {
 						Player target = getServer().getPlayerExact(args[1]);
 						target.removePotionEffect(PotionEffectType.SLOW);
-					
+					}
+				}							
 				}
-				}
+
 
 			}
 
-		}
+		
 
 		return true;
 	}
