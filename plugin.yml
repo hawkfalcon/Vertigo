@@ -1,5 +1,5 @@
 name: Vertigo
-version: 1.4
+version: 1.6
 main: me.hawkfalcon.Vertigo.Vertigo
 permissions: 
      vertigo.use:
@@ -11,6 +11,9 @@ permissions:
      vertigo.all:
         description: Allows use of /vertigo all
         default: OP
+     vertigo.stop:
+        description: Allows use of /vertigo stop
+        default: true
         
 commands:
     vertigo:
